@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GachiFit プライバシーポリシー</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.75;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    h1, h2 {
+      line-height: 1.35;
+      color: #111827;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 1.25rem;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    .updated {
+      margin: 0 0 2rem;
+      color: #6b7280;
+    }
+    a {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>GachiFit プライバシーポリシー</h1>
+    <p class="updated">制定日: 2026年7月2日</p>
+
+    <h2>アプリ名</h2>
+    <p>GachiFit</p>
+
+    <h2>取得する可能性のあるデータ</h2>
+    <p>GachiFitは、ユーザーが許可した場合に、Apple HealthKitおよび外部Healthサービスから健康・フィットネス関連データを読み取る可能性があります。</p>
+    <p>主なデータは以下です。</p>
+    <ul>
+      <li>体重</li>
+      <li>体脂肪率</li>
+      <li>除脂肪体重</li>
+      <li>BMI</li>
+      <li>アクティブ消費カロリー</li>
+      <li>安静時消費カロリー / 基礎代謝</li>
+      <li>総消費カロリー</li>
+      <li>摂取カロリー</li>
+      <li>炭水化物</li>
+      <li>脂肪</li>
+      <li>タンパク質</li>
+    </ul>
+    <p>Google Health API連携では、体重、体脂肪率、アクティブ消費カロリー、総消費カロリー、栄養ログを読み取る場合があります。</p>
+
+    <h2>HealthKitから読み取るデータ</h2>
+    <p>GachiFitは、ユーザーがiOSのヘルスケア権限画面で許可したHealthKitデータのみを読み取ります。GachiFitは現在、HealthKitへの書き込みを行いません。</p>
+
+    <h2>利用目的</h2>
+    <p>読み取ったデータは、以下の目的で利用します。</p>
+    <ul>
+      <li>体重、体脂肪率、栄養、消費/摂取カロリーの表示</li>
+      <li>目標達成状況の表示</li>
+      <li>推移グラフ、カード、比較表示</li>
+      <li>目標達成シミュレーション</li>
+      <li>データソース比較や、重複・外部データ由来の表示調整</li>
+    </ul>
+    <p>GachiFitは、医療診断、治療、医療助言を目的とするものではありません。</p>
+
+    <h2>アプリ内保存</h2>
+    <p>Google Health APIなど外部Healthサービスから取得したデータは、アプリ内ローカルのSQLiteに保存されます。</p>
+    <p>HealthKitから直接読み取った日次データは、表示・計算用のメモリ上データとして扱われます。また、表示用に計算・選択した日次値はアプリ内ローカルのSQLiteに保存されます。</p>
+    <p>UserDefaultsには設定値、データソース選択、Google連携ステータスなどが保存されます。Google OAuthトークンはKeychainに保存されます。</p>
+
+    <h2>外部送信</h2>
+    <p>現時点のGachiFitには、Apple HealthKitまたは外部Healthサービスから取得した健康・フィットネスデータを、GachiFit独自サーバー、第三者サーバー、広告サービス、解析サービスへ送信する機能はありません。</p>
+    <p>Google Health API連携をユーザーが利用する場合は、Google OAuth認証およびGoogle APIからのデータ取得通信が発生します。この通信はGoogleアカウント連携とGoogle Healthデータ取得のためのものであり、GachiFitが取得済みの健康・フィットネスデータを別の外部サーバーへ送信するものではありません。</p>
+
+    <h2>AI解析への送信</h2>
+    <p>現時点のGachiFitには、HealthKitデータや外部HealthデータをAI解析サービスへ送信する機能はありません。</p>
+    <p>現時点では、HealthKitデータや外部HealthデータをAIモデルの学習、推論、分析、プロファイリング目的で利用しません。</p>
+
+    <h2>第三者提供</h2>
+    <p>GachiFitは、ユーザーの健康・フィットネスデータを広告、マーケティング、用途ベースのデータマイニング目的で第三者へ提供しません。</p>
+    <p>現時点のGachiFitには、Apple HealthKitデータまたは外部Healthデータを第三者広告・解析SDKへ提供する実装はありません。</p>
+
+    <h2>HealthKit権限の停止方法</h2>
+    <p>ユーザーはiOSの設定またはヘルスケアアプリから、GachiFitに許可したHealthKitデータへのアクセス権限をいつでも変更または停止できます。</p>
+    <ol>
+      <li>iPhoneの「設定」または「ヘルスケア」アプリを開く。</li>
+      <li>GachiFitのデータアクセス設定を開く。</li>
+      <li>不要なデータ種別の読み取り権限をオフにする。</li>
+    </ol>
+    <p>iOSのバージョンによって表示名や手順が異なる場合があります。</p>
+
+    <h2>データ削除方法</h2>
+    <p>Google Health APIから取得してローカルSQLiteに保存されたデータは、アプリ内の設定画面にあるGoogle Health APIの「取得済みデータ削除」から削除できます。この操作では、アプリ内に保存されたGoogle由来データと、Google由来データをもとに保存された表示用の日次値を削除します。Google連携のトークンは削除しません。</p>
+    <p>Google連携トークンは、同じ設定画面のGoogle Health APIの「解除」から削除できます。</p>
+    <p>HealthKit内の元データはGachiFitではなくiOSのヘルスケアアプリで管理されます。GachiFitの権限を停止しても、ヘルスケアアプリ内の元データが自動削除されるわけではありません。</p>
+
+    <h2>問い合わせ先</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p><a href="mailto:naokijuno@gmail.com">naokijuno@gmail.com</a></p>
+
+    <h2>改定</h2>
+    <p>本プライバシーポリシーは、必要に応じて改定されることがあります。重要な変更がある場合は、アプリ内または本ページでお知らせします。</p>
+  </main>
+</body>
+</html>
